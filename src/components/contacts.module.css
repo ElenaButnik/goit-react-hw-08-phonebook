@@ -1,0 +1,123 @@
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 5px;
+}
+
+.input {
+  display: block;
+  width: 90%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: rgb(153, 226, 204);
+  border-radius: 5px;
+  border-color: rgb(126, 182, 165);
+  border: none;
+}
+
+.btnDelete {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: rgb(239, 247, 196);
+  border-radius: 5px;
+  border-color: rgb(226, 241, 138);
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.list {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(33, 49, 31);
+}
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navItem {
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.navLink {
+  cursor: pointer;
+  color: rgb(33, 49, 31);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.activeNavLink {
+  color: rgb(138, 10, 10);
+}
+
+.header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 60px;
+  color: #fff;
+  background-color: transparent;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  color: rgb(19, 20, 90);
+  margin-right: 10px;
+  font-weight: 600;
+}
+

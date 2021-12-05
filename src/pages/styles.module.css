@@ -1,0 +1,41 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 5px;
+}
+.input {
+  display: block;
+  width: 90%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 5px 17px;
+  background-color: rgb(194, 203, 235);
+  border-radius: 5px;
+ border: none;
+}
+
+
