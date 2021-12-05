@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import s from "./contacts.module.css";
 
 export default function AuthNav() {

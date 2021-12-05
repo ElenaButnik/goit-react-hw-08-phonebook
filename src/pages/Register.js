@@ -1,33 +1,34 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import s from './styles.module.css';
-import { register } from '../redux/auth/auth-operations';
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import s from "./styles.module.css";
+import { register } from "../redux/auth/auth-operations";
 
 export default function RegisterView() {
   const dispatch = useDispatch();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
-      case 'name':
+      case "name":
         return setName(value);
-      case 'email':
+      case "email":
         return setEmail(value);
-      case 'password':
+      case "password":
         return setPassword(value);
-      default: alert("Something went wrong!")
+      default:
+        alert("Something went wrong!");
         return;
     }
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(register({ name, email, password }));
-    setName('');
-    setEmail('');
-    setPassword('');
+    setName("");
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -37,7 +38,13 @@ export default function RegisterView() {
       <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
         <label className={s.label}>
           Name
-          <input className={s.input} type="text" name="name" value={name} onChange={handleChange} />
+          <input
+            className={s.input}
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+          />
         </label>
 
         <label className={s.label}>
@@ -68,9 +75,10 @@ export default function RegisterView() {
           />
         </label>
 
-        <button type="submit" className={s.btn}>Register</button>
+        <button type="submit" className={s.btn}>
+          Register
+        </button>
       </form>
     </div>
   );
 }
-
